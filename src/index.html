@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Global Project Tracker</title>
 </head>
 <body>
+  <header class="Header">
+    <div class="logo">
+      <h3>Global Project Tracker</h3>
+    </div>
+  </header>
+
+  <main class="form-wrapper">
     <form class="form">
-        <span class="input-span">
-          <label for="email" class="label">Email</label>
-          <input type="email" name="email" id="email"
-        /></span>
-        <span class="input-span">
-          <label for="password" class="label">Password</label>
-          <input type="password" name="password" id="password"
-        /></span>
-        <span class="span"><a href="#">Forgot password?</a></span>
-        <input class="submit" type="submit" value="Log in" />
-        <span class="span">Don't have an account? <a href="#">Sign up</a></span>
-      </form>
+      <h2>Inicio de sesión</h2>
+
+      <div class="input-group">
+        <label for="email" class="label">Email</label>
+        <input type="email" name="email" id="email" placeholder="tucorreo@ejemplo.com" required />
+      </div>
+
+      <div class="input-group">
+        <label for="password" class="label">Contraseña</label>
+        <input type="password" name="password" id="password" placeholder="********" required />
+      </div>
+
+      <div class="form-links">
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </div>
+
+      <input class="submit" type="submit" value="Iniciar sesión" />
+
+      <div class="form-links">
+        <span>¿No tienes cuenta? <a href="#">Regístrate</a></span>
+      </div>
+    </form>
+  </main>
 </body>
 </html>
+

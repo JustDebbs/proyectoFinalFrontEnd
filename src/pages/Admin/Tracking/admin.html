@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="admin.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Global Project Tracker</title>
+</head>
+<body>
+  <header class="Header">
+    <div class="logo">
+      <h3>Global Project Tracker</h3>
+    </div>
+    <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-left">
+            <a href="#"><i class='bx bx-slider-alt'></i> Tracking</a>
+            <a href="../CreateProject/project.html"><i class='bx bx-add-to-queue'></i> Nuevo Proyecto</a>
+          </div>
+          <div class="nav-right">
+            <i class='bx bx-user'></i>
+          </div>
+        </div>
+    </nav>
+  </header>
+  <main>
+    <section class="filters">
+      <section class="main-filters">
+        <div class="main-filters-g1">
+          <select><option selected disabled>Seleccionar Grupo</option></select>
+          <select><option selected disabled>Procedencia</option></select>
+          <select><option selected disabled>Fecha de Entrada</option></select>
+        </div>
+        <div class="main-filters-g2">
+          <select><option selected disabled>Geografía</option></select>
+          <select><option selected disabled>Estado</option></select>
+          <select><option selected disabled>Fecha Exigida</option></select>
+        </div>
+        <div class="main-filters-g3">
+          <select><option selected disabled>Prioridad</option></select>
+          <select><option selected disabled>ID Proyecto</option></select>
+          <select><option selected>Mis proyectos</option></select>
+        </div>
+      </section>
+      <div class="filters-btn">
+        <button><i class='bx bx-filter-alt'></i> Aplicar Filtros</button>
+      </div>
+    </section>
+    <table>
+      <thead>
+        <tr class="action-row">
+          <th><i class='bx bx-show'></i></th>
+          <th><i class='bx bx-error'></i></th>
+          <th><i class='bx bx-message-square-detail'></i></th>
+          <th><i class='bx bx-layer'></i></th>
+          <th>Grupo</th>
+          <th>Geografía</th>
+          <th>F. Entrada</th>
+          <th>F. Exigida</th>
+          <th>Usuario</th>
+          <th>Nombre del proyecto</th>
+          <th>ID del proyecto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4"></td>
+          <td>RRHH</td>
+          <td>España</td>
+          <td>03/04/2025</td>
+          <td>15/04/2025</td>
+          <td>x105455</td>
+          <td>Onboarding Rediseño España 2025</td>
+          <td>PRJ-230948</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="project.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Global Project Tracker</title>
 </head>
 <body>
-    
+    <header class="Header">
+        <div class="logo">
+        <h3>Global Project Tracker</h3>
+        </div>
+        <nav class="nav">
+            <div class="nav-container">
+            <div class="nav-left">
+                <a href="../Tracking/admin.html"><i class='bx bx-slider-alt'></i> Tracking</a>
+                <a href="#"><i class='bx bx-add-to-queue'></i> Nuevo Proyecto</a>
+            </div>
+            <div class="nav-right">
+                <i class='bx bx-user'></i>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="project-form-container">
+          <h4>Creación de Proyectos</h4>
+      
+          <div class="form-group">
+            <label for="titulo">Título</label>
+            <textarea id="text" id="titulo"></textarea>
+          </div>
+      
+          <div class="form-group">
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" rows="4"></textarea>
+          </div>
+      
+          <div class="form-group">
+            <label for="objetivos">Objetivos</label>
+            <textarea id="objetivos" rows="3"></textarea>
+          </div>
+      
+          <h4>Clasificación</h4>
+      
+          <div class="classification-row">
+            <select>
+              <option selected disabled>Seleccionar Grupo</option>
+            </select>
+
+            <select>
+              <option selected disabled>Geografía</option>
+            </select>
+      
+            <select>
+              <option selected disabled>Prioridad</option>
+            </select>
+
+            <input type="date" placeholder="Fecha Exigida">
+            
+          </div>
+      
+          <div class="members-row">
+            <div class="assigned">
+              <i class='bx bx-user'></i>
+              <span>x105455 - Deborah Antón Benavides</span>
+            </div>
+      
+            <div class="add-member">
+              <input type="text" placeholder="Usuario">
+              <button class="add-btn"><i class='bx bx-plus'></i></button>
+            </div>
+      
+            <div class="chip">
+              <span>x105455 - Deborah Antón Benavides</span>
+            </div>
+          </div>
+      
+          <div class="form-buttons">
+            <button class="btn-accept">Aceptar</button>
+            <button class="btn-cancel">Cancelar</button>
+          </div>
+        </section>
+    </main>      
 </body>
-</html>
